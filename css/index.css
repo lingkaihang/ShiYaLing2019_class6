@@ -1,0 +1,13 @@
+.nav ul li:first-child {
+    border-bottom: 3px #0099ff solid;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.content img {
+    margin-top: 50px;
+
+    width: 100%;
+} 
