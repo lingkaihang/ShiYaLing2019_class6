@@ -68,3 +68,8 @@ body {
 .clearfix {
     *zoom: 1
 }
+
+/* 加载不出就显示待加载动图 */
+img {
+    background: url(../loading-black.gif) no-repeat center center;
+}
