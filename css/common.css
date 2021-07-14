@@ -13,6 +13,7 @@
 .w {
     width: 1200px;
     margin: 0 auto;
+    
 }
 
 .header {
@@ -31,10 +32,6 @@
    margin-right: 250px;
     width: 70px;
     height: 70px;
-}
-
-.nav {
-    float: left;
 }
 
 .nav ul {

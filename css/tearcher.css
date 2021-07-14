@@ -1,3 +1,51 @@
 .nav ul li:nth-child(3) {
     border-bottom: 3px #0099ff solid;
 }
+
+.content {
+    margin-top: 95px;
+    margin-left: 200px;
+    width: 1318px;
+}
+
+
+.content ul li {
+    float: left;
+    width: 260px;
+    height: 318px;
+    margin-right: 178px;
+    margin-bottom: 140px;
+}
+
+.content ul li a {
+    height: 100%;
+    width: 100%;
+}
+
+.content ul li a img {
+    display: inline-block;
+    width: 260px;
+    height: 260px;
+    background-color: pink;
+    border-radius: 130px;
+}
+
+.content ul li a h4 {
+    height: 58px;
+    text-align: center;
+    line-height: 58px;
+    font-size: 20px;
+    color: #000;
+}
+
+.content ul li:hover {
+    box-shadow:  0px 4px 4px rgba(0,0,0,.3);
+    transition: all .2s linear;
+    background-color: rgb(247, 238, 214);
+        border-radius: 16px;
+
+}
+
+.content ul li:hover a h4 {
+    color: #0099ff;
+}
