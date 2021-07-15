@@ -16,7 +16,23 @@
 
 <body>
     <script>
-        alert("凌凯航温馨提醒：请用PC端观看此网站，本网站并不适用于移动端！(用手机看会导致极度影响观感并且部分组件无法加载)")
+        function IsPC() {
+            var userAgentInfo = navigator.userAgent;
+            var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+            var flag = true;
+            for (var v = 0; v < Agents.length; v++) {
+                if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            return flag;
+        }
+        if (!IsPC()) {
+            alert("凌凯航温馨提醒：监测到您正在使用移动端观看此网站，请用PC端观看此网站，本网站并不适用于移动端！(用手机或平板看会导致极度影响观感并且部分组件无法加载)")
+        }
     </script>
     <div class="header">
         <div class="w">
