@@ -20,15 +20,23 @@
 .content ul li a {
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
-.content ul li a img {
+.content ul li a .human {
     display: inline-block;
     width: 260px;
     height: 260px;
     border-radius: 130px;
 }
 
+.content ul li a .txk {
+    position: absolute;
+    left: 103px;
+    bottom: -84px;
+   
+    background-image: none;
+}
 .content ul li a h4 {
     height: 58px;
     text-align: center;
@@ -38,7 +46,8 @@
 }
 
 .content ul li:hover {
-    box-shadow:  0px 4px 4px rgba(0,0,0,.3);
+    transform: scale(1) translate(0, 5px);
+    box-shadow: 0 0 1em .1em rgba(35, 173, 229, .3);
     transition: all .2s linear;
     background-color: rgb(247, 238, 214);
         border-radius: 16px;
